@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+/* URL used to retrieve h1 font Sigmar One*/
+*{
+    margin: 0;
+    padding:0;
+    
+}
+/* Code above removes white space between header & top of page */
+header{
+        background: black;
+}
+
+h1{
+    text-align:center;
+    font-family: 'Sigmar One';
+    color:  #ffc1cc;
+    font-size: 60px;
+}
+
+body {
+    background-color: #089471;
+}
+p{
+    font-family:'Sigmar One';
+    color:#ffc1cc;
+    text-align: center;
+    margin:10px;
+    font-size: 20px;
+}
+.score-board{
+    margin: 20px auto;
+    border: 3px solid white;
+    border-radius:10px;
+    text-align:center;
+    width: 200px;
+    font-size:40px;
+    color:white;
+    padding: 30px 20px;
+    font-family: sans-serif;  
+    position:relative; 
+}
+
+.badge{
+    background:#ec95a5;
+    font-size: 14px;
+    padding: 8px 10px;
+    font:small-caps bold 24px/1 sans-serif;
+    color:white;
+
+}
+
+#user-label{
+    position:absolute;
+    top:25px;
+    left:-25px;
+}
+
+ #comp-label{
+    position:absolute;
+    top:25px;
+    right:-25px;
+}
+
+#action{
+    font-family: 'Sigmar One';
+    color:#ffc1cc;
+    font-size: 30px;
+    
+    text-align:center;
+    margin: 20px;
+}
+
+.choices{
+    text-align:center;
+}
+
+.choice{
+    display:inline-block;
+}
+/* Makes images horizontal*/
+.choice:hover{
+    cursor:pointer;
+}
