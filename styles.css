@@ -1,43 +1,52 @@
 @import url(https://fonts.googleapis.com/css?family=Sigmar+One);
-/* URL used to retrieve h1 font Sigmar One*/
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 *{
     margin: 0;
     padding:0;
     
 }
 /* Code above removes white space between header & top of page */
-header{
-        background: black;
-}
 
+header{
+    background-color: black;
+}
 h1{
     text-align:center;
     font-family: 'Sigmar One';
-    color:  #ffc1cc;
-    font-size: 60px;
+    color:#f0aeba;
+    font-size: 67px;
+   
 }
 
 body {
-    background-color: #089471;
+  background-color: #33f7f7;
+
 }
+
+
 p{
-    font-family:'Sigmar One';
-    color:#ffc1cc;
+    font-family: 'Russo One', sans-serif;
+    color: black;
     text-align: center;
-    margin:10px;
-    font-size: 20px;
+    margin:11px;
+    font-size: 25px;
+    font-weight: bold;
+    
+    
+    
+    
 }
 .score-board{
     margin: 20px auto;
-    border: 3px solid white;
+    border: 5px solid black;
     border-radius:10px;
     text-align:center;
     width: 200px;
-    font-size:40px;
-    color:white;
+    font-size:37px;
+    color:black;
     padding: 30px 20px;
     font-family: sans-serif;  
-    position:relative; 
+    position:relative;     
 }
 
 .badge{
@@ -45,7 +54,7 @@ p{
     font-size: 14px;
     padding: 8px 10px;
     font:small-caps bold 24px/1 sans-serif;
-    color:white;
+    color:white; 
 
 }
 
@@ -62,12 +71,13 @@ p{
 }
 
 #action{
-    font-family: 'Sigmar One';
-    color:#ffc1cc;
-    font-size: 30px;
-    
+    font-family: 'Russo One', sans-serif;
+    color:black;
+    font-size: 40px;  
     text-align:center;
-    margin: 20px;
+    margin: 24px;
+    font-weight: bold;
+    
 }
 
 .choices{
@@ -81,3 +91,33 @@ p{
 .choice:hover{
     cursor:pointer;
 }
+#r{
+    background:pink;
+}
+#r:hover {
+    transition: .5s ease;
+    background: #ed718b;
+    border-radius: 10px;
+    color: #fff;
+    transform: scale(1.1);
+  }
+  #p{
+      background:navy;
+  }
+  #p:hover {
+    transition: .5s ease;
+    background: navy;
+    border-radius: 10px;
+    color: #fff;
+    transform: scale(1.1);
+  }
+  #s{
+      background:rgb(123, 142, 248)
+  }
+  #s:hover {
+    transition: .5s ease;
+    background: #8871ed;
+    border-radius: 10px;
+    color: #fff;
+    transform: scale(1.1);
+  }

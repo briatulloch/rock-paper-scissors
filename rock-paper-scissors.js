@@ -29,10 +29,9 @@ function win(playerSelection, computerSelection) {
     compScore_span.innerHTML = compScore;
 
     if (userScore < 5){result_p.innerHTML = `${convertToWord(playerSelection)} beats ${convertToWord(computerSelection)}. You win! =D`;
-    }else if(userScore===5){result_p.innerHTML='Game over, you win! Refresh to play again';   
-    }   
+    }else if(userScore===5){result_p.innerHTML='Game over, you win! Refresh to play again';
+    }
 }
-
 function lose(playerSelection, computerSelection) {
     compScore++;
     userScore_span.innerHTML = userScore;
@@ -65,7 +64,9 @@ function game(playerSelection) {
       }      
     }  
 
+
 function main() {
+
  //Links images to game play  
 rock_div.addEventListener('click', () => game("r"));
 
@@ -73,4 +74,5 @@ paper_div.addEventListener('click', () => game("p"));
 
 scissors_div.addEventListener('click', () => game("s"));
 }
+
 main ();
