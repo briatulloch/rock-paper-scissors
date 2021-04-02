@@ -35,7 +35,7 @@ p{
     font-family: 'Russo One', sans-serif;
     color: black;
     text-align: center;
-    margin:11px;
+    margin:15px;
     font-size: 25px;
     font-weight: bold;
     
@@ -79,7 +79,7 @@ p{
     color:black;
     font-size: 34px;  
     text-align:center;
-    margin: 24px;
+    margin: 26px;
     font-weight: bold;
     
 }
@@ -100,13 +100,13 @@ p{
 }
 #r:hover {
     transition: .5s ease;
-    background: #ed718b;
+    background: #f89baf;
     border-radius: 10px;
     color: #fff;
     transform: scale(1.1);
   }
   #p{
-      background:navy;
+      background:rgb(1, 1, 165);
   }
   #p:hover {
     transition: .5s ease;
