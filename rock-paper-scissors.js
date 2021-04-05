@@ -30,8 +30,14 @@ function win(playerSelection, computerSelection) {
 
     if (userScore < 5){result_p.innerHTML = `${convertToWord(playerSelection)} beats ${convertToWord(computerSelection)}. You win! =D`;
     }else if(userScore===5){result_p.innerHTML='Game over, you win! Refresh to play again';
-    }
+    rock_div.removeEventListener('click', handleRock);
+    paper_div.removeEventListener('click', handlePaper);
+    scissors_div.removeEventListener('click', handleScissors);  
+    
+  } 
 }
+
+
 function lose(playerSelection, computerSelection) {
     compScore++;
     userScore_span.innerHTML = userScore;
@@ -39,7 +45,11 @@ function lose(playerSelection, computerSelection) {
     
     if (compScore<5){result_p.innerHTML = `${convertToWord(computerSelection)} beats ${convertToWord(playerSelection)}. You lose =(`;
     }else if(compScore===5){result_p.innerHTML='Game over, you lose! Refresh to play again';
-    }
+    rock_div.removeEventListener('click', handleRock);
+    paper_div.removeEventListener('click', handlePaper);
+    scissors_div.removeEventListener('click', handleScissors);  
+    
+  }
 }
 
 function draw() {
@@ -64,15 +74,21 @@ function game(playerSelection) {
       }      
     }  
 
+    function handleRock() {
+      game("r");
+    }
+ 
+    function handlePaper() {
+      game("p");
+    }
 
-function main() {
+    function handleScissors() {
+      game("s");
+    }
 
- //Links images to game play  
-rock_div.addEventListener('click', () => game("r"));
-
-paper_div.addEventListener('click', () => game("p"));
-
-scissors_div.addEventListener('click', () => game("s"));
-}
-
-main ();
+  //Links images to game play  
+ rock_div.addEventListener('click', handleRock);
+ 
+ paper_div.addEventListener('click', handlePaper);
+ 
+ scissors_div.addEventListener('click', handleScissors);
