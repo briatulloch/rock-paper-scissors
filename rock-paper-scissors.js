@@ -94,9 +94,7 @@ function game(playerSelection) {
       compScore_span.innerHTML = "0";
       result_p.innerHTML="PAPER COVERS ROCK. YOU WIN!"  
       rock_div.addEventListener('click', handleRock);
- 
       paper_div.addEventListener('click', handlePaper);
-      
       scissors_div.addEventListener('click', handleScissors); 
     };
 
